@@ -89,7 +89,6 @@ input {
 }
 
 input::placeholder {
-    text-align: start;
     display: flex;
     align-items: flex-end;
     text-align: right;

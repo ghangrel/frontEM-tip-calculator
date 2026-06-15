@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+</head>
+<body>
+<main>
+        <section class="title">
+            <h1>SPLI<br>TTER</h1>
+        </section>
+    <article class="card">
+        <section class="calculator">
+            <form class="inputs">
+                <label for="bill">Bill</label>
+                <div class="inset">
+                    <span class="dollar">$</span>
+                    <input id="bill" placeholder="0">
+                </div>
+            </form>
+            <div class="tip">
+                <p>Select Tip %</p>
+                <div class="grid-class">
+                    <button class="tip-button">5%</button>
+                    <button class="tip-button">10%</button>
+                    <button class="tip-button">15%</button>
+                    <button class="tip-button">25%</button>
+                    <button class="tip-button">50%</button>
+                    <input class="bt-input" id="custom-tip" placeholder="Custom">                      
+                </div>
+            </div>
+             <form class="inputs">
+                <div class="label-error">
+                <label for="people">Number of People</label>
+                <span class="error">can't be zero</span>
+                </div>
+                <div class="inset">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" /></svg>
+                    <input id="people" placeholder="1">
+                </div>
+            </form>
+        </section>
+
+        <section class="result">
+            <div class="upper">
+            <div class="result-text">
+                <div class="texts">
+                <p>Tip Amount</p>
+                <span>/ person</span>
+                </div>
+                <p id="tip-amount-result" class="amount">$0.00</p>
+            </div>
+            <div class="result-text">
+                <div class="texts">
+                <p>Total</p>
+                <span>/ person</span>
+                </div>
+                <p id="total-result" class="amount">$0.00</p>
+            </div>
+            </div>
+            <button class="reset" id="btn-reset">RESET</button>
+
+        </section>
+    </article>
+</main>
+</body>
+</html>
